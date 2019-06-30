@@ -1,8 +1,10 @@
-This benchmark demonstrates how to optimize list
-iteration speed in all major JS engines by tweaking the
-internal runtime representation.
+# BuckleScript List Benchmark
 
-As for right now, the expression `let myList = ["a", "b", "c"]` is compiled to following JavaScript:
+This benchmark demonstrates how to optimize list iteration speed in all major
+JS engines by tweaking the internal runtime representation.
+
+As for right now, the expression `let myList = ["a", "b", "c"]` is compiled to
+following JavaScript:
 
 ```
 var myList = /* :: */[
