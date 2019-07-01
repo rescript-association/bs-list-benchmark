@@ -1,6 +1,6 @@
 # BuckleScript List Benchmark
 
-This benchmark demonstrates how to optimize list iteration speed in all major
+This benchmark demonstrates how to optimize list iteration speed in almost all major
 JS engines by tweaking the internal runtime representation.
 
 As for right now, the expression `let myList = ["a", "b", "c"]` is compiled to
@@ -107,7 +107,7 @@ original: 3513 ms.
 There are some interesting observations:
 
 - ~30% better V8 / Chakra performance
-- +9% worse performance in SpiderMonkey, but the performance there is already 3 times as fast as V8
+- -9% worse performance in SpiderMonkey, but the performance there is already 3 times as fast as V8
 - Not sure why, but in JSC, the first call has a huge gap with +51% performance boost, while every other call is only around +6%
 
 ## Credits
